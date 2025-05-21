@@ -13,4 +13,6 @@ struct City {
     let adminName: String
     let toponymName: String
     let geonameId: Int
+    let lat: String
+    let lng: String
 }

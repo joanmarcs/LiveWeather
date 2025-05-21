@@ -30,7 +30,3 @@ class GeoNamesApiService {
 
 
 }
-
-struct GeoNamesResponse: Codable {
-    let geonames: [CityDTO]
-}

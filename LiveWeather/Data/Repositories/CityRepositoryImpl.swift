@@ -16,6 +16,6 @@ final class CityRepositoryImpl: CityRepository {
 
     func searchCities(by name: String, offset: Int) async throws -> [City] {
         let dtos = try await remoteDataSource.searchCities(query: name, offset: offset)
-        return dtos.map { $0.toDomain() }
+        return dtos.map { CityMapper.map(from: $0) }
     }
 }

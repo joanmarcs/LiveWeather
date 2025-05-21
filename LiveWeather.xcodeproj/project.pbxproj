@@ -22,6 +22,19 @@
 		E6BDBAF42DDDC27C002D13DC /* SearchCityByNameUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBAF32DDDC27C002D13DC /* SearchCityByNameUseCase.swift */; };
 		E6BDBAF62DDDC2A3002D13DC /* CityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBAF52DDDC2A3002D13DC /* CityRepository.swift */; };
 		E6BDBAF82DDDC2ED002D13DC /* CityRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBAF72DDDC2ED002D13DC /* CityRepositoryImpl.swift */; };
+		E6BDBAFC2DDDDC2C002D13DC /* CurrentConditionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBAFB2DDDDC2C002D13DC /* CurrentConditionDTO.swift */; };
+		E6BDBAFE2DDDDC5B002D13DC /* WeatherDescriptionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBAFD2DDDDC5B002D13DC /* WeatherDescriptionDTO.swift */; };
+		E6BDBB002DDDDD11002D13DC /* ForecastDayDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBAFF2DDDDD11002D13DC /* ForecastDayDTO.swift */; };
+		E6BDBB022DDDDD41002D13DC /* WeatherApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBB012DDDDD41002D13DC /* WeatherApiService.swift */; };
+		E6BDBB042DDDDD8C002D13DC /* WeatherResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBB032DDDDD8C002D13DC /* WeatherResponseDTO.swift */; };
+		E6BDBB082DDDDE13002D13DC /* GeonamesResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBB072DDDDE13002D13DC /* GeonamesResponseDTO.swift */; };
+		E6BDBB0B2DDDDFB0002D13DC /* CityMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBB0A2DDDDFB0002D13DC /* CityMapper.swift */; };
+		E6BDBB0F2DDDE232002D13DC /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBB0E2DDDE232002D13DC /* Weather.swift */; };
+		E6BDBB112DDDE243002D13DC /* ForecastDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBB102DDDE243002D13DC /* ForecastDay.swift */; };
+		E6BDBB132DDDE2E8002D13DC /* WeatherMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBB122DDDE2E8002D13DC /* WeatherMapper.swift */; };
+		E6BDBB152DDDE866002D13DC /* WheaterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBB142DDDE866002D13DC /* WheaterRepository.swift */; };
+		E6BDBB172DDDEA64002D13DC /* WeatherRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBB162DDDEA64002D13DC /* WeatherRepositoryImpl.swift */; };
+		E6BDBB192DDDEAA3002D13DC /* GetWeatherUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBB182DDDEAA3002D13DC /* GetWeatherUseCase.swift */; };
 		E6E3B0B32DDDBC54003C84C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E3B0A92DDDBC54003C84C2 /* AppDelegate.swift */; };
 		E6E3B0B42DDDBC54003C84C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E3B0B02DDDBC54003C84C2 /* SceneDelegate.swift */; };
 		E6E3B0B62DDDBC54003C84C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6E3B0AA2DDDBC54003C84C2 /* Assets.xcassets */; };
@@ -70,6 +83,19 @@
 		E6BDBAF32DDDC27C002D13DC /* SearchCityByNameUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityByNameUseCase.swift; sourceTree = "<group>"; };
 		E6BDBAF52DDDC2A3002D13DC /* CityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityRepository.swift; sourceTree = "<group>"; };
 		E6BDBAF72DDDC2ED002D13DC /* CityRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityRepositoryImpl.swift; sourceTree = "<group>"; };
+		E6BDBAFB2DDDDC2C002D13DC /* CurrentConditionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentConditionDTO.swift; sourceTree = "<group>"; };
+		E6BDBAFD2DDDDC5B002D13DC /* WeatherDescriptionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDescriptionDTO.swift; sourceTree = "<group>"; };
+		E6BDBAFF2DDDDD11002D13DC /* ForecastDayDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastDayDTO.swift; sourceTree = "<group>"; };
+		E6BDBB012DDDDD41002D13DC /* WeatherApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApiService.swift; sourceTree = "<group>"; };
+		E6BDBB032DDDDD8C002D13DC /* WeatherResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponseDTO.swift; sourceTree = "<group>"; };
+		E6BDBB072DDDDE13002D13DC /* GeonamesResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeonamesResponseDTO.swift; sourceTree = "<group>"; };
+		E6BDBB0A2DDDDFB0002D13DC /* CityMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityMapper.swift; sourceTree = "<group>"; };
+		E6BDBB0E2DDDE232002D13DC /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		E6BDBB102DDDE243002D13DC /* ForecastDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastDay.swift; sourceTree = "<group>"; };
+		E6BDBB122DDDE2E8002D13DC /* WeatherMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMapper.swift; sourceTree = "<group>"; };
+		E6BDBB142DDDE866002D13DC /* WheaterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheaterRepository.swift; sourceTree = "<group>"; };
+		E6BDBB162DDDEA64002D13DC /* WeatherRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepositoryImpl.swift; sourceTree = "<group>"; };
+		E6BDBB182DDDEAA3002D13DC /* GetWeatherUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWeatherUseCase.swift; sourceTree = "<group>"; };
 		E6E3B0492DDDBBF6003C84C2 /* LiveWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6E3B05F2DDDBBF7003C84C2 /* LiveWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6E3B0692DDDBBF7003C84C2 /* LiveWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				E6BDBAF72DDDC2ED002D13DC /* CityRepositoryImpl.swift */,
+				E6BDBB162DDDEA64002D13DC /* WeatherRepositoryImpl.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -153,7 +180,8 @@
 		E6BDBADA2DDDBF28002D13DC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E6BDBAEF2DDDC111002D13DC /* CityDTO.swift */,
+				E6BDBAFA2DDDDC01002D13DC /* Weather */,
+				E6BDBAF92DDDDBFB002D13DC /* City */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -162,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				E6BDBAED2DDDC082002D13DC /* GeoNamesApiService.swift */,
+				E6BDBB012DDDDD41002D13DC /* WeatherApiService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -170,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				E6BDBAF52DDDC2A3002D13DC /* CityRepository.swift */,
+				E6BDBB142DDDE866002D13DC /* WheaterRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -178,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				E6BDBAF32DDDC27C002D13DC /* SearchCityByNameUseCase.swift */,
+				E6BDBB182DDDEAA3002D13DC /* GetWeatherUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -185,7 +216,8 @@
 		E6BDBADE2DDDBF4A002D13DC /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				E6BDBAF12DDDC1F9002D13DC /* City.swift */,
+				E6BDBB0D2DDDE21A002D13DC /* Weather */,
+				E6BDBB0C2DDDE211002D13DC /* City */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -207,6 +239,52 @@
 			children = (
 			);
 			path = CityDetail;
+			sourceTree = "<group>";
+		};
+		E6BDBAF92DDDDBFB002D13DC /* City */ = {
+			isa = PBXGroup;
+			children = (
+				E6BDBAEF2DDDC111002D13DC /* CityDTO.swift */,
+				E6BDBB072DDDDE13002D13DC /* GeonamesResponseDTO.swift */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
+		E6BDBAFA2DDDDC01002D13DC /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				E6BDBAFB2DDDDC2C002D13DC /* CurrentConditionDTO.swift */,
+				E6BDBAFD2DDDDC5B002D13DC /* WeatherDescriptionDTO.swift */,
+				E6BDBAFF2DDDDD11002D13DC /* ForecastDayDTO.swift */,
+				E6BDBB032DDDDD8C002D13DC /* WeatherResponseDTO.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		E6BDBB092DDDDF6E002D13DC /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				E6BDBB0A2DDDDFB0002D13DC /* CityMapper.swift */,
+				E6BDBB122DDDE2E8002D13DC /* WeatherMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		E6BDBB0C2DDDE211002D13DC /* City */ = {
+			isa = PBXGroup;
+			children = (
+				E6BDBAF12DDDC1F9002D13DC /* City.swift */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
+		E6BDBB0D2DDDE21A002D13DC /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				E6BDBB0E2DDDE232002D13DC /* Weather.swift */,
+				E6BDBB102DDDE243002D13DC /* ForecastDay.swift */,
+			);
+			path = Weather;
 			sourceTree = "<group>";
 		};
 		E6E3B0402DDDBBF6003C84C2 = {
@@ -274,6 +352,7 @@
 		E6E3B0C32DDDBC72003C84C2 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				E6BDBB092DDDDF6E002D13DC /* Mappers */,
 				E6BDBADB2DDDBF2D002D13DC /* Network */,
 				E6BDBADA2DDDBF28002D13DC /* Models */,
 				E6BDBAD92DDDBF1F002D13DC /* Repositories */,
@@ -504,14 +583,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6BDBB152DDDE866002D13DC /* WheaterRepository.swift in Sources */,
+				E6BDBB112DDDE243002D13DC /* ForecastDay.swift in Sources */,
 				E6BDBAF02DDDC111002D13DC /* CityDTO.swift in Sources */,
+				E6BDBB082DDDDE13002D13DC /* GeonamesResponseDTO.swift in Sources */,
+				E6BDBB132DDDE2E8002D13DC /* WeatherMapper.swift in Sources */,
+				E6BDBAFE2DDDDC5B002D13DC /* WeatherDescriptionDTO.swift in Sources */,
 				E6BDBAE42DDDBFF2002D13DC /* CitiesListAdapter.swift in Sources */,
+				E6BDBB042DDDDD8C002D13DC /* WeatherResponseDTO.swift in Sources */,
 				E6BDBAEE2DDDC082002D13DC /* GeoNamesApiService.swift in Sources */,
 				E6E3B0B32DDDBC54003C84C2 /* AppDelegate.swift in Sources */,
+				E6BDBB192DDDEAA3002D13DC /* GetWeatherUseCase.swift in Sources */,
 				E6BDBAE62DDDC007002D13DC /* CitiesListView.swift in Sources */,
 				E6E3B0B42DDDBC54003C84C2 /* SceneDelegate.swift in Sources */,
+				E6BDBB0B2DDDDFB0002D13DC /* CityMapper.swift in Sources */,
+				E6BDBB022DDDDD41002D13DC /* WeatherApiService.swift in Sources */,
+				E6BDBAFC2DDDDC2C002D13DC /* CurrentConditionDTO.swift in Sources */,
 				E6BDBAEA2DDDC028002D13DC /* CitiesListPresenter.swift in Sources */,
 				E6BDBAF22DDDC1F9002D13DC /* City.swift in Sources */,
+				E6BDBB0F2DDDE232002D13DC /* Weather.swift in Sources */,
+				E6BDBB172DDDEA64002D13DC /* WeatherRepositoryImpl.swift in Sources */,
+				E6BDBB002DDDDD11002D13DC /* ForecastDayDTO.swift in Sources */,
 				E6BDBAF82DDDC2ED002D13DC /* CityRepositoryImpl.swift in Sources */,
 				E6BDBAF42DDDC27C002D13DC /* SearchCityByNameUseCase.swift in Sources */,
 				E6BDBAF62DDDC2A3002D13DC /* CityRepository.swift in Sources */,

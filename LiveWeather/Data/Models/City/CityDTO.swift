@@ -7,16 +7,12 @@
 
 import Foundation
 
-struct CityDTO: Codable {
+struct CityDTO: Decodable {
     let name: String
     let countryName: String
     let adminName1: String
     let toponymName: String
     let geonameId: Int
-}
-
-extension CityDTO {
-    func toDomain() -> City {
-        City(name: name, countryName: countryName, adminName: adminName1, toponymName: toponymName, geonameId: geonameId)
-    }
+    let lat: String
+    let lng: String
 }

@@ -73,6 +73,6 @@ final class CitiesListTableViewCell: UITableViewCell {
     func configure(model: City) {
         cityNameLabel.text = model.name + " (\(model.toponymName))"
         countryNameLabel.text = model.adminName + " - " + model.countryName
-        locationCodeLabel.text = "Id: \(model.geonameId)"
+        locationCodeLabel.text = "\(model.lat), \(model.lng)"
     }
 }
