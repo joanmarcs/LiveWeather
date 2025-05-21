@@ -110,6 +110,69 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E6BDBAD82DDDBF15002D13DC /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		E6BDBAD92DDDBF1F002D13DC /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		E6BDBADA2DDDBF28002D13DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E6BDBADB2DDDBF2D002D13DC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E6BDBADC2DDDBF39002D13DC /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		E6BDBADD2DDDBF42002D13DC /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		E6BDBADE2DDDBF4A002D13DC /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E6BDBADF2DDDBF54002D13DC /* CitiesList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CitiesList;
+			sourceTree = "<group>";
+		};
+		E6BDBAE02DDDBF64002D13DC /* CityDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CityDetail;
+			sourceTree = "<group>";
+		};
 		E6E3B0402DDDBBF6003C84C2 = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +238,10 @@
 		E6E3B0C32DDDBC72003C84C2 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				E6BDBADB2DDDBF2D002D13DC /* Network */,
+				E6BDBADA2DDDBF28002D13DC /* Models */,
+				E6BDBAD92DDDBF1F002D13DC /* Repositories */,
+				E6BDBAD82DDDBF15002D13DC /* DataSources */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -182,6 +249,9 @@
 		E6E3B0C42DDDBC79003C84C2 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				E6BDBADE2DDDBF4A002D13DC /* Entities */,
+				E6BDBADD2DDDBF42002D13DC /* UseCases */,
+				E6BDBADC2DDDBF39002D13DC /* Repositories */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -189,6 +259,8 @@
 		E6E3B0C52DDDBC7E003C84C2 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				E6BDBAE02DDDBF64002D13DC /* CityDetail */,
+				E6BDBADF2DDDBF54002D13DC /* CitiesList */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
