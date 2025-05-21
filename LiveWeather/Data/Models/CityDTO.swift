@@ -12,10 +12,11 @@ struct CityDTO: Codable {
     let countryName: String
     let adminName1: String
     let toponymName: String
+    let geonameId: Int
 }
 
 extension CityDTO {
     func toDomain() -> City {
-        City(name: name, countryName: countryName, adminName: adminName1, toponymName: toponymName)
+        City(name: name, countryName: countryName, adminName: adminName1, toponymName: toponymName, geonameId: geonameId)
     }
 }

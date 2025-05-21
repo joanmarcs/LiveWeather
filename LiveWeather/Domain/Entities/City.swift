@@ -12,4 +12,5 @@ struct City {
     let countryName: String
     let adminName: String
     let toponymName: String
+    let geonameId: Int
 }
