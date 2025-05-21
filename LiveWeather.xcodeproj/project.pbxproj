@@ -12,10 +12,8 @@
 		E09356972864CE08C11028F4 /* Pods_LiveWeatherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD46895CF064836F64F11BB0 /* Pods_LiveWeatherTests.framework */; };
 		E6E3B0B32DDDBC54003C84C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E3B0A92DDDBC54003C84C2 /* AppDelegate.swift */; };
 		E6E3B0B42DDDBC54003C84C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E3B0B02DDDBC54003C84C2 /* SceneDelegate.swift */; };
-		E6E3B0B52DDDBC54003C84C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E3B0B12DDDBC54003C84C2 /* ViewController.swift */; };
 		E6E3B0B62DDDBC54003C84C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6E3B0AA2DDDBC54003C84C2 /* Assets.xcassets */; };
 		E6E3B0B82DDDBC54003C84C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6E3B0AD2DDDBC54003C84C2 /* LaunchScreen.storyboard */; };
-		E6E3B0B92DDDBC54003C84C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6E3B0AF2DDDBC54003C84C2 /* Main.storyboard */; };
 		E6E3B0BC2DDDBC55003C84C2 /* LiveWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E3B0BA2DDDBC55003C84C2 /* LiveWeatherTests.swift */; };
 		E6E3B0C02DDDBC58003C84C2 /* LiveWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E3B0BD2DDDBC58003C84C2 /* LiveWeatherUITests.swift */; };
 		E6E3B0C12DDDBC58003C84C2 /* LiveWeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E3B0BE2DDDBC58003C84C2 /* LiveWeatherUITestsLaunchTests.swift */; };
@@ -55,9 +53,7 @@
 		E6E3B0AA2DDDBC54003C84C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6E3B0AB2DDDBC54003C84C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6E3B0AC2DDDBC54003C84C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E6E3B0AE2DDDBC54003C84C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E6E3B0B02DDDBC54003C84C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E6E3B0B12DDDBC54003C84C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E6E3B0BA2DDDBC55003C84C2 /* LiveWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveWeatherTests.swift; sourceTree = "<group>"; };
 		E6E3B0BD2DDDBC58003C84C2 /* LiveWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveWeatherUITests.swift; sourceTree = "<group>"; };
 		E6E3B0BE2DDDBC58003C84C2 /* LiveWeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveWeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -146,8 +142,6 @@
 				E6E3B0AA2DDDBC54003C84C2 /* Assets.xcassets */,
 				E6E3B0AB2DDDBC54003C84C2 /* Info.plist */,
 				E6E3B0AD2DDDBC54003C84C2 /* LaunchScreen.storyboard */,
-				E6E3B0AF2DDDBC54003C84C2 /* Main.storyboard */,
-				E6E3B0B12DDDBC54003C84C2 /* ViewController.swift */,
 			);
 			path = LiveWeather;
 			sourceTree = "<group>";
@@ -309,7 +303,6 @@
 			files = (
 				E6E3B0B62DDDBC54003C84C2 /* Assets.xcassets in Resources */,
 				E6E3B0B82DDDBC54003C84C2 /* LaunchScreen.storyboard in Resources */,
-				E6E3B0B92DDDBC54003C84C2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,7 +398,6 @@
 			files = (
 				E6E3B0B32DDDBC54003C84C2 /* AppDelegate.swift in Sources */,
 				E6E3B0B42DDDBC54003C84C2 /* SceneDelegate.swift in Sources */,
-				E6E3B0B52DDDBC54003C84C2 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,14 +442,6 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		E6E3B0AF2DDDBC54003C84C2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E6E3B0AE2DDDBC54003C84C2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -474,7 +458,6 @@
 				INFOPLIST_FILE = LiveWeather/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -503,7 +486,6 @@
 				INFOPLIST_FILE = LiveWeather/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
