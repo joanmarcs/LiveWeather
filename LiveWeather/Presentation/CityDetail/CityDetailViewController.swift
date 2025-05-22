@@ -53,15 +53,16 @@ extension CityDetailViewController: CityDetailUI {
         mainView.currentWeatherDescriptionLabel.text = "\(weather.description)"
 
         mainView.forecastStackView.arrangedSubviews.forEach { $0.removeFromSuperview() }
-
+        
         weather.forecast.forEach { day in
+            let formattedDate = DateFormatterService.shared.formatDate(from: day.date)
+            
             let label = UILabel()
             label.font = .systemFont(ofSize: 14)
             label.textColor = .label
-            label.text = "\(day.date): max \(day.maxTemp)°C, min \(day.minTemp)°C"
+            label.text = "\(formattedDate): max \(day.maxTemp)°C, min \(day.minTemp)°C"
             mainView.forecastStackView.addArrangedSubview(label)
         }
-
     }
 
     func showError(message: String) {
