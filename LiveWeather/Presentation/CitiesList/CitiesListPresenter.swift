@@ -14,6 +14,7 @@ protocol CitiesListPresenterProtocol: AnyObject {
     func updateSearchText(_ searchText: String)
     func cancelSearch()
     func loadNextPage(reset: Bool)
+    func didSelectCity(_ city: City)
 }
 
 protocol ListCitiesUI: AnyObject {
@@ -24,6 +25,8 @@ protocol ListCitiesUI: AnyObject {
 
 final class CitiesListPresenter: CitiesListPresenterProtocol {
     weak var ui: ListCitiesUI?
+    weak var coordinator: AppCoordinator?
+
     private let getCitiesUseCase: SearchCitiesByNameUseCase
     
     private var currentPage = 0
@@ -84,5 +87,9 @@ final class CitiesListPresenter: CitiesListPresenterProtocol {
         currentQuery = ""
         self.ui?.update(cities: [])
         self.ui?.showEmptyState(true)
+    }
+    
+    func didSelectCity(_ city: City) {
+        coordinator?.showCityDetail(for: city)
     }
 }

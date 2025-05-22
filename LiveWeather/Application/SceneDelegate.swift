@@ -10,27 +10,19 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    var appCoordinator: AppCoordinator?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        
-        
-        let apiService = GeoNamesApiService()
-        let dataSource = RemoteCityDataSource(apiService: apiService)
-        let repository = CityRepositoryImpl(remoteDataSource: dataSource)
-        let useCase = SearchCities(repository: repository)
-        let presenter = CitiesListPresenter(getCitiesUseCase: useCase)
 
-        let searchVC = CitiesListViewController()
-        searchVC.presenter = presenter
+        let navController = UINavigationController()
+        appCoordinator = AppCoordinator(navigationController: navController)
+        appCoordinator?.start()
 
-        let navController = UINavigationController(rootViewController: searchVC)
         let window = UIWindow(windowScene: windowScene)
         window.rootViewController = navController
         self.window = window
         window.makeKeyAndVisible()
-
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

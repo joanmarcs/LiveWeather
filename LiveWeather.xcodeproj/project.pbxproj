@@ -43,6 +43,7 @@
 		E6BDBB252DDE1485002D13DC /* WeatherCountryDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBB242DDE1485002D13DC /* WeatherCountryDTO.swift */; };
 		E6BDBB272DDE1DB4002D13DC /* WeatherLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBB262DDE1DB4002D13DC /* WeatherLocation.swift */; };
 		E6BDBB2B2DDF29F7002D13DC /* DateFormatterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBB2A2DDF29F7002D13DC /* DateFormatterService.swift */; };
+		E6BDBB2E2DDF2D04002D13DC /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBB2D2DDF2D04002D13DC /* AppCoordinator.swift */; };
 		E6E3B0B32DDDBC54003C84C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E3B0A92DDDBC54003C84C2 /* AppDelegate.swift */; };
 		E6E3B0B42DDDBC54003C84C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E3B0B02DDDBC54003C84C2 /* SceneDelegate.swift */; };
 		E6E3B0B62DDDBC54003C84C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6E3B0AA2DDDBC54003C84C2 /* Assets.xcassets */; };
@@ -112,6 +113,7 @@
 		E6BDBB242DDE1485002D13DC /* WeatherCountryDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCountryDTO.swift; sourceTree = "<group>"; };
 		E6BDBB262DDE1DB4002D13DC /* WeatherLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherLocation.swift; sourceTree = "<group>"; };
 		E6BDBB2A2DDF29F7002D13DC /* DateFormatterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterService.swift; sourceTree = "<group>"; };
+		E6BDBB2D2DDF2D04002D13DC /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		E6E3B0492DDDBBF6003C84C2 /* LiveWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6E3B05F2DDDBBF7003C84C2 /* LiveWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6E3B0692DDDBBF7003C84C2 /* LiveWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -326,6 +328,16 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		E6BDBB2F2DDF3025002D13DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E6E3B0AA2DDDBC54003C84C2 /* Assets.xcassets */,
+				E6E3B0AB2DDDBC54003C84C2 /* Info.plist */,
+				E6E3B0AD2DDDBC54003C84C2 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		E6E3B0402DDDBBF6003C84C2 = {
 			isa = PBXGroup;
 			children = (
@@ -356,9 +368,7 @@
 				E6E3B0C32DDDBC72003C84C2 /* Data */,
 				E6E3B0C42DDDBC79003C84C2 /* Domain */,
 				E6E3B0C52DDDBC7E003C84C2 /* Presentation */,
-				E6E3B0AA2DDDBC54003C84C2 /* Assets.xcassets */,
-				E6E3B0AB2DDDBC54003C84C2 /* Info.plist */,
-				E6E3B0AD2DDDBC54003C84C2 /* LaunchScreen.storyboard */,
+				E6BDBB2F2DDF3025002D13DC /* Resources */,
 			);
 			path = LiveWeather;
 			sourceTree = "<group>";
@@ -385,6 +395,7 @@
 			children = (
 				E6E3B0A92DDDBC54003C84C2 /* AppDelegate.swift */,
 				E6E3B0B02DDDBC54003C84C2 /* SceneDelegate.swift */,
+				E6BDBB2D2DDF2D04002D13DC /* AppCoordinator.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -647,6 +658,7 @@
 				E6BDBAEA2DDDC028002D13DC /* CitiesListPresenter.swift in Sources */,
 				E6BDBAF22DDDC1F9002D13DC /* City.swift in Sources */,
 				E6BDBB0F2DDDE232002D13DC /* Weather.swift in Sources */,
+				E6BDBB2E2DDF2D04002D13DC /* AppCoordinator.swift in Sources */,
 				E6BDBB252DDE1485002D13DC /* WeatherCountryDTO.swift in Sources */,
 				E6BDBB172DDDEA64002D13DC /* WeatherRepositoryImpl.swift in Sources */,
 				E6BDBB212DDE135D002D13DC /* NearestAreaDTO.swift in Sources */,
