@@ -20,13 +20,24 @@ struct WeatherMapper {
                 minTemp: $0.mintempC
             )
         }
+        
+        let location = dto.nearest_area.first.map {
+            WeatherLocation(
+                regionName: $0.areaName.first?.value ?? "",
+                countryName: $0.country.first?.value ?? ""
+            )
+        } ?? WeatherLocation(regionName: "", countryName: "")
 
-        return Weather(
+        
+        let weather = Weather(
             temperature: current.temp_C,
             description: current.weatherDesc.first?.value ?? "",
             humidity: current.humidity,
             windSpeed: current.windspeedKmph,
-            forecast: forecast
+            forecast: forecast,
+            location: location
         )
+
+        return weather
     }
 }

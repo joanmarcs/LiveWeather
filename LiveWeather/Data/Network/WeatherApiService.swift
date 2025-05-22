@@ -21,6 +21,8 @@ final class WeatherAPIService {
         }
 
         let (data, _) = try await session.data(from: url)
+        print(String(data: data, encoding: .utf8) ?? "Invalid UTF-8")
+        
         let decoder = JSONDecoder()
         return try decoder.decode(WeatherResponseDTO.self, from: data)
     }

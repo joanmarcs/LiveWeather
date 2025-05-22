@@ -13,8 +13,9 @@ struct Weather {
     let humidity: String
     let windSpeed: String
     let forecast: [ForecastDay]
+    let location: WeatherLocation
     
     static func empty() -> Weather {
-            Weather(temperature: "-", description: "-", humidity: "-", windSpeed: "-", forecast: [])
+        Weather(temperature: "-", description: "-", humidity: "-", windSpeed: "-", forecast: [], location: WeatherLocation(regionName: "-", countryName: "-"))
     }
 }

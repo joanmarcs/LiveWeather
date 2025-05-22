@@ -10,4 +10,5 @@ import Foundation
 struct WeatherResponseDTO: Decodable {
     let current_condition: [CurrentConditionDTO]
     let weather: [ForecastDayDTO]
+    let nearest_area: [NearestAreaDTO]
 }

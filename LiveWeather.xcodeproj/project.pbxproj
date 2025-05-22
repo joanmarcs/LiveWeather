@@ -35,6 +35,13 @@
 		E6BDBB152DDDE866002D13DC /* WheaterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBB142DDDE866002D13DC /* WheaterRepository.swift */; };
 		E6BDBB172DDDEA64002D13DC /* WeatherRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBB162DDDEA64002D13DC /* WeatherRepositoryImpl.swift */; };
 		E6BDBB192DDDEAA3002D13DC /* GetWeatherUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBB182DDDEAA3002D13DC /* GetWeatherUseCase.swift */; };
+		E6BDBB1B2DDE0B4B002D13DC /* CityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBB1A2DDE0B4B002D13DC /* CityDetailViewController.swift */; };
+		E6BDBB1D2DDE0B5D002D13DC /* CityDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBB1C2DDE0B5D002D13DC /* CityDetailView.swift */; };
+		E6BDBB1F2DDE0B71002D13DC /* CityDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBB1E2DDE0B71002D13DC /* CityDetailPresenter.swift */; };
+		E6BDBB212DDE135D002D13DC /* NearestAreaDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBB202DDE135D002D13DC /* NearestAreaDTO.swift */; };
+		E6BDBB232DDE1473002D13DC /* WeatherAreaNameDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBB222DDE1473002D13DC /* WeatherAreaNameDTO.swift */; };
+		E6BDBB252DDE1485002D13DC /* WeatherCountryDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBB242DDE1485002D13DC /* WeatherCountryDTO.swift */; };
+		E6BDBB272DDE1DB4002D13DC /* WeatherLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BDBB262DDE1DB4002D13DC /* WeatherLocation.swift */; };
 		E6E3B0B32DDDBC54003C84C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E3B0A92DDDBC54003C84C2 /* AppDelegate.swift */; };
 		E6E3B0B42DDDBC54003C84C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E3B0B02DDDBC54003C84C2 /* SceneDelegate.swift */; };
 		E6E3B0B62DDDBC54003C84C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6E3B0AA2DDDBC54003C84C2 /* Assets.xcassets */; };
@@ -96,6 +103,13 @@
 		E6BDBB142DDDE866002D13DC /* WheaterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheaterRepository.swift; sourceTree = "<group>"; };
 		E6BDBB162DDDEA64002D13DC /* WeatherRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepositoryImpl.swift; sourceTree = "<group>"; };
 		E6BDBB182DDDEAA3002D13DC /* GetWeatherUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWeatherUseCase.swift; sourceTree = "<group>"; };
+		E6BDBB1A2DDE0B4B002D13DC /* CityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailViewController.swift; sourceTree = "<group>"; };
+		E6BDBB1C2DDE0B5D002D13DC /* CityDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailView.swift; sourceTree = "<group>"; };
+		E6BDBB1E2DDE0B71002D13DC /* CityDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailPresenter.swift; sourceTree = "<group>"; };
+		E6BDBB202DDE135D002D13DC /* NearestAreaDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestAreaDTO.swift; sourceTree = "<group>"; };
+		E6BDBB222DDE1473002D13DC /* WeatherAreaNameDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAreaNameDTO.swift; sourceTree = "<group>"; };
+		E6BDBB242DDE1485002D13DC /* WeatherCountryDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCountryDTO.swift; sourceTree = "<group>"; };
+		E6BDBB262DDE1DB4002D13DC /* WeatherLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherLocation.swift; sourceTree = "<group>"; };
 		E6E3B0492DDDBBF6003C84C2 /* LiveWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6E3B05F2DDDBBF7003C84C2 /* LiveWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6E3B0692DDDBBF7003C84C2 /* LiveWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -237,6 +251,9 @@
 		E6BDBAE02DDDBF64002D13DC /* CityDetail */ = {
 			isa = PBXGroup;
 			children = (
+				E6BDBB1A2DDE0B4B002D13DC /* CityDetailViewController.swift */,
+				E6BDBB1C2DDE0B5D002D13DC /* CityDetailView.swift */,
+				E6BDBB1E2DDE0B71002D13DC /* CityDetailPresenter.swift */,
 			);
 			path = CityDetail;
 			sourceTree = "<group>";
@@ -253,10 +270,13 @@
 		E6BDBAFA2DDDDC01002D13DC /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				E6BDBB032DDDDD8C002D13DC /* WeatherResponseDTO.swift */,
 				E6BDBAFB2DDDDC2C002D13DC /* CurrentConditionDTO.swift */,
 				E6BDBAFD2DDDDC5B002D13DC /* WeatherDescriptionDTO.swift */,
 				E6BDBAFF2DDDDD11002D13DC /* ForecastDayDTO.swift */,
-				E6BDBB032DDDDD8C002D13DC /* WeatherResponseDTO.swift */,
+				E6BDBB202DDE135D002D13DC /* NearestAreaDTO.swift */,
+				E6BDBB222DDE1473002D13DC /* WeatherAreaNameDTO.swift */,
+				E6BDBB242DDE1485002D13DC /* WeatherCountryDTO.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -283,6 +303,7 @@
 			children = (
 				E6BDBB0E2DDDE232002D13DC /* Weather.swift */,
 				E6BDBB102DDDE243002D13DC /* ForecastDay.swift */,
+				E6BDBB262DDE1DB4002D13DC /* WeatherLocation.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -583,10 +604,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6BDBB1F2DDE0B71002D13DC /* CityDetailPresenter.swift in Sources */,
 				E6BDBB152DDDE866002D13DC /* WheaterRepository.swift in Sources */,
 				E6BDBB112DDDE243002D13DC /* ForecastDay.swift in Sources */,
 				E6BDBAF02DDDC111002D13DC /* CityDTO.swift in Sources */,
+				E6BDBB232DDE1473002D13DC /* WeatherAreaNameDTO.swift in Sources */,
 				E6BDBB082DDDDE13002D13DC /* GeonamesResponseDTO.swift in Sources */,
+				E6BDBB1D2DDE0B5D002D13DC /* CityDetailView.swift in Sources */,
 				E6BDBB132DDDE2E8002D13DC /* WeatherMapper.swift in Sources */,
 				E6BDBAFE2DDDDC5B002D13DC /* WeatherDescriptionDTO.swift in Sources */,
 				E6BDBAE42DDDBFF2002D13DC /* CitiesListAdapter.swift in Sources */,
@@ -595,6 +619,7 @@
 				E6E3B0B32DDDBC54003C84C2 /* AppDelegate.swift in Sources */,
 				E6BDBB192DDDEAA3002D13DC /* GetWeatherUseCase.swift in Sources */,
 				E6BDBAE62DDDC007002D13DC /* CitiesListView.swift in Sources */,
+				E6BDBB272DDE1DB4002D13DC /* WeatherLocation.swift in Sources */,
 				E6E3B0B42DDDBC54003C84C2 /* SceneDelegate.swift in Sources */,
 				E6BDBB0B2DDDDFB0002D13DC /* CityMapper.swift in Sources */,
 				E6BDBB022DDDDD41002D13DC /* WeatherApiService.swift in Sources */,
@@ -602,11 +627,14 @@
 				E6BDBAEA2DDDC028002D13DC /* CitiesListPresenter.swift in Sources */,
 				E6BDBAF22DDDC1F9002D13DC /* City.swift in Sources */,
 				E6BDBB0F2DDDE232002D13DC /* Weather.swift in Sources */,
+				E6BDBB252DDE1485002D13DC /* WeatherCountryDTO.swift in Sources */,
 				E6BDBB172DDDEA64002D13DC /* WeatherRepositoryImpl.swift in Sources */,
+				E6BDBB212DDE135D002D13DC /* NearestAreaDTO.swift in Sources */,
 				E6BDBB002DDDDD11002D13DC /* ForecastDayDTO.swift in Sources */,
 				E6BDBAF82DDDC2ED002D13DC /* CityRepositoryImpl.swift in Sources */,
 				E6BDBAF42DDDC27C002D13DC /* SearchCityByNameUseCase.swift in Sources */,
 				E6BDBAF62DDDC2A3002D13DC /* CityRepository.swift in Sources */,
+				E6BDBB1B2DDE0B4B002D13DC /* CityDetailViewController.swift in Sources */,
 				E6BDBAEC2DDDC053002D13DC /* RemoteCityDataSource.swift in Sources */,
 				E6BDBAE82DDDC01A002D13DC /* CitiesListTableViewCell.swift in Sources */,
 				E6BDBAE22DDDBFDC002D13DC /* CitiesListViewController.swift in Sources */,

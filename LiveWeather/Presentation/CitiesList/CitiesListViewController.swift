@@ -54,6 +54,16 @@ extension CitiesListViewController: ListCitiesUI {
 extension CitiesListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        guard let selectedCity = citiesListProvider?.cities[indexPath.row] else { return }
+
+        // Inyección manual de dependencias
+        let apiService = WeatherAPIService()
+        let repository = WeatherRepositoryImpl(apiService: apiService)
+        let useCase = GetWeatherByLocation(repository: repository)
+        let presenter = CityDetailPresenter(getWeatherUseCase: useCase)
+
+        let detailVC = CityDetailViewController(city: selectedCity, presenter: presenter)
+        navigationController?.pushViewController(detailVC, animated: true)
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -65,6 +75,7 @@ extension CitiesListViewController: UITableViewDelegate {
             presenter?.loadNextPage(reset: false)
         }
     }
+
 }
 
 extension CitiesListViewController: UISearchResultsUpdating {
