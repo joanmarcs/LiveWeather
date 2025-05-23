@@ -11,7 +11,7 @@ protocol SearchCitiesByNameUseCase {
     func execute(query: String, offset: Int) async throws -> [City]
 }
 
-final class SearchCities: SearchCitiesByNameUseCase {
+final class SearchCitiesByNameUseCaseImpl: SearchCitiesByNameUseCase {
     private let repository: CityRepository
     
     init(repository: CityRepository) {

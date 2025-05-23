@@ -20,10 +20,10 @@ final class AppCoordinator {
     }
 
     private func buildCityList() -> UIViewController {
-        let geoNamesService = GeoNamesApiService()
-        let dataSource = RemoteCityDataSource(apiService: geoNamesService)
+        let geonamesService: GeonamesApiServiceProtocol = GeonamesApiService()
+        let dataSource: RemoteCityDataSourceProtocol = RemoteCityDataSource(apiService: geonamesService)
         let repository = CityRepositoryImpl(remoteDataSource: dataSource)
-        let useCase = SearchCities(repository: repository)
+        let useCase = SearchCitiesByNameUseCaseImpl(repository: repository)
         let presenter = CitiesListPresenter(getCitiesUseCase: useCase)
         let vc = CitiesListViewController()
         vc.presenter = presenter
@@ -32,9 +32,10 @@ final class AppCoordinator {
     }
 
     func showCityDetail(for city: City) {
-        let weatherService = WeatherAPIService()
-        let weatherRepository = WeatherRepositoryImpl(apiService: weatherService)
-        let useCase = GetWeatherByLocation(repository: weatherRepository)
+        let weatherService: WeatherApiServiceProtocol = WeatherApiService()
+        let weatherDataSource: RemoteWeatherDataSourceProtocol = RemoteWeatherDataSource(apiService: weatherService)
+        let weatherRepository: WeatherRepository = WeatherRepositoryImpl(dataSource: weatherDataSource)
+        let useCase = GetWeatherByLocationUseCaseImpl(repository: weatherRepository)
         let presenter = CityDetailPresenter(getWeatherUseCase: useCase)
         let vc = CityDetailViewController(city: city, presenter: presenter)
         navigationController.pushViewController(vc, animated: true)

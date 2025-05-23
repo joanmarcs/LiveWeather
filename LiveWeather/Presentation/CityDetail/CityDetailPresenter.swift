@@ -23,9 +23,9 @@ protocol CityDetailUI: AnyObject {
 
 final class CityDetailPresenter: CityDetailPresenterProtocol {
     weak var ui: CityDetailUI?
-    private let getWeatherUseCase: GetWeatherUseCase
+    private let getWeatherUseCase: GetWeatherByLocationUseCase
 
-    init(getWeatherUseCase: GetWeatherUseCase) {
+    init(getWeatherUseCase: GetWeatherByLocationUseCase) {
         self.getWeatherUseCase = getWeatherUseCase
     }
     

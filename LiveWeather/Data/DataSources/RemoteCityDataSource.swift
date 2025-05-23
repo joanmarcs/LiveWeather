@@ -12,9 +12,9 @@ protocol RemoteCityDataSourceProtocol {
 }
 
 class RemoteCityDataSource: RemoteCityDataSourceProtocol {
-    private let apiService: GeoNamesApiService
+    private let apiService: GeonamesApiServiceProtocol
 
-    init(apiService: GeoNamesApiService) {
+    init(apiService: GeonamesApiServiceProtocol) {
         self.apiService = apiService
     }
 

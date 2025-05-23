@@ -8,14 +8,15 @@
 import Foundation
 
 final class WeatherRepositoryImpl: WeatherRepository {
-    private let apiService: WeatherAPIService
+    private let dataSource: RemoteWeatherDataSourceProtocol
 
-    init(apiService: WeatherAPIService) {
-        self.apiService = apiService
+    init(dataSource: RemoteWeatherDataSourceProtocol) {
+        self.dataSource = dataSource
     }
 
     func getWeather(lat: String, lng: String) async throws -> Weather {
-        let dto = try await apiService.fetchWeather(lat: lat, lng: lng)
+        let dto = try await dataSource.fetchWeather(lat: lat, lng: lng)
         return WeatherMapper.map(from: dto)
     }
 }
+
