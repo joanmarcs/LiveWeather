@@ -7,11 +7,11 @@
 
 import Foundation
 
-protocol APISession {
+protocol ApiSession {
     func get(from url: URL) async throws -> Data
 }
 
-final class DefaultAPISession: APISession {
+final class DefaultApiSession: ApiSession {
     private let session: URLSession
 
     init(session: URLSession = .shared) {

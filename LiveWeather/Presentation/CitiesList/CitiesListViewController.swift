@@ -35,7 +35,7 @@ final class CitiesListViewController: UIViewController {
     }
 }
 
-extension CitiesListViewController: ListCitiesUI {
+extension CitiesListViewController: CitiesListViewProtocol {
     func update(cities: [City]) {
         citiesListProvider?.cities = cities
         mainView.emptyStateView.isHidden = !cities.isEmpty

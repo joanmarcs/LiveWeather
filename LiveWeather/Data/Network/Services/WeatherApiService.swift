@@ -8,14 +8,19 @@
 import Foundation
 
 final class WeatherApiService: WeatherApiServiceProtocol {
-    private let session: APISession
+    private let session: ApiSession
+    private let config: WeatherApiConfiguration
 
-    init(session: APISession = DefaultAPISession()) {
+    init(
+        session: ApiSession = DefaultApiSession(),
+        config: WeatherApiConfiguration = .default
+    ) {
         self.session = session
+        self.config = config
     }
 
     func fetchWeather(lat: String, lng: String) async throws -> WeatherResponseDTO {
-        let urlString = "https://wttr.in/\(lat),\(lng)?format=j1"
+        let urlString = "\(config.baseURL)/\(lat),\(lng)?format=\(config.format)"
         guard let url = URL(string: urlString) else {
             throw NetworkError.badURL
         }
@@ -24,5 +29,6 @@ final class WeatherApiService: WeatherApiServiceProtocol {
         return try JSONDecoder().decode(WeatherResponseDTO.self, from: data)
     }
 }
+
 
 

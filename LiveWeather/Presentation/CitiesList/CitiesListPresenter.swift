@@ -8,7 +8,7 @@
 import Foundation
 
 protocol CitiesListPresenterProtocol: AnyObject {
-    var ui: ListCitiesUI? { get set }
+    var ui: CitiesListViewProtocol? { get set }
     
     func screenTitle() -> String
     func updateSearchText(_ searchText: String)
@@ -17,14 +17,14 @@ protocol CitiesListPresenterProtocol: AnyObject {
     func didSelectCity(_ city: City)
 }
 
-protocol ListCitiesUI: AnyObject {
+protocol CitiesListViewProtocol: AnyObject {
     func update(cities: [City])
     func append(cities: [City])
     func showEmptyState(_ show: Bool)
 }
 
 final class CitiesListPresenter: CitiesListPresenterProtocol {
-    weak var ui: ListCitiesUI?
+    weak var ui: CitiesListViewProtocol?
     weak var coordinator: AppCoordinator?
 
     private let getCitiesUseCase: SearchCitiesByNameUseCase

@@ -8,16 +8,28 @@
 import Foundation
 
 final class GeonamesApiService: GeonamesApiServiceProtocol {
-    private let session: APISession
-    private let username = "joanmarcs"
+    private let session: ApiSession
+    private let config: GeonamesApiConfiguration
 
-    init(session: APISession = DefaultAPISession()) {
+    init(
+        session: ApiSession = DefaultApiSession(),
+        config: GeonamesApiConfiguration = .default
+    ) {
         self.session = session
+        self.config = config
     }
 
     func searchCities(query: String, offset: Int = 0) async throws -> [CityDTO] {
-        let urlString = "https://secure.geonames.org/searchJSON?name_startsWith=\(query)&startRow=\(offset)&featureClass=P&maxRows=20&username=\(username)"
-        guard let url = URL(string: urlString) else {
+        var components = URLComponents(string: config.baseURL)
+        components?.queryItems = [
+            URLQueryItem(name: "name_startsWith", value: query),
+            URLQueryItem(name: "startRow", value: "\(offset)"),
+            URLQueryItem(name: "featureClass", value: "P"),
+            URLQueryItem(name: "maxRows", value: "\(config.maxRows)"),
+            URLQueryItem(name: "username", value: config.username)
+        ]
+
+        guard let url = components?.url else {
             throw NetworkError.badURL
         }
 
