@@ -72,5 +72,3 @@ cd liveweather
 - Use the search bar to type a city
 - Tap a result to view weather
 - View current data + 3-day forecast
-
----
