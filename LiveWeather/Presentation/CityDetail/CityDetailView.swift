@@ -43,7 +43,7 @@ final class CityDetailView: UIView {
         label.font = .systemFont(ofSize: 36, weight: .light)
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.accessibilityIdentifier = "WeatherDetailView_Title"
+        label.accessibilityIdentifier = AccessibilityIdentifier.cityDetailScreenTitle
         return label
     }()
     

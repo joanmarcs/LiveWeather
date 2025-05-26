@@ -54,7 +54,7 @@ final class LiveWeatherUITests: XCTestCase {
         XCTAssertTrue(cell.waitForExistence(timeout: 5))
         cell.tap()
 
-        let detailLabel = app.staticTexts["WeatherDetailView_Title"]
+        let detailLabel = app.staticTexts[AccessibilityIdentifier.cityDetailScreenTitle]
         XCTAssertTrue(detailLabel.waitForExistence(timeout: 5))
     }
 
