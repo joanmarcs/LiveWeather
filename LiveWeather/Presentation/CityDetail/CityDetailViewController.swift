@@ -37,7 +37,7 @@ final class CityDetailViewController: UIViewController {
     }
 }
 
-extension CityDetailViewController: CityDetailUI {
+extension CityDetailViewController: CityDetailViewProtocol {
     func showLoading(_ show: Bool) {
         show ? mainView.activityIndicator.startAnimating() : mainView.activityIndicator.stopAnimating()
     }

@@ -22,7 +22,6 @@ final class CitiesListViewController: UIViewController {
         super.viewDidLoad()
         citiesListProvider = CitiesListAdapter(tableView: mainView.citiesTableView)
         presenter?.ui = self
-        //presenter?.getCities()
         
         title = presenter?.screenTitle()
         navigationController?.navigationBar.prefersLargeTitles = true

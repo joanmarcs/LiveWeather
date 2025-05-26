@@ -40,4 +40,22 @@ final class LiveWeatherUITests: XCTestCase {
             }
         }
     }
+    
+    func test_searchCity_andOpenDetail() {
+        let app = XCUIApplication()
+        app.launch()
+
+        let searchBar = app.searchFields["Search a place..."]
+        XCTAssertTrue(searchBar.waitForExistence(timeout: 5))
+        searchBar.tap()
+        searchBar.typeText("Madrid")
+
+        let cell = app.tables.cells["CityCell_3117735"]
+        XCTAssertTrue(cell.waitForExistence(timeout: 5))
+        cell.tap()
+
+        let detailLabel = app.staticTexts["WeatherDetailView_Title"]
+        XCTAssertTrue(detailLabel.waitForExistence(timeout: 5))
+    }
+
 }

@@ -27,6 +27,7 @@ final class CitiesListView: UIView {
         let searchController = UISearchController(searchResultsController: nil)
         searchController.searchBar.placeholder = "Search a place..."
         searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.accessibilityIdentifier = "CitySearchBar"
         return searchController
     }()
     

@@ -74,5 +74,7 @@ final class CitiesListTableViewCell: UITableViewCell {
         cityNameLabel.text = model.name + " (\(model.toponymName))"
         countryNameLabel.text = model.adminName + " - " + model.countryName
         locationCodeLabel.text = "\(model.lat), \(model.lng)"
+        accessibilityIdentifier = "CityCell_\(model.geonameId)"
+
     }
 }

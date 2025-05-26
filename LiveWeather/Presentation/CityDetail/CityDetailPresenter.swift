@@ -8,13 +8,13 @@
 import Foundation
 
 protocol CityDetailPresenterProtocol: AnyObject {
-    var ui: CityDetailUI? { get set }
+    var ui: CityDetailViewProtocol? { get set }
     
     func loadWeather(lat: String, lng: String)
     func screenTitle() -> String
 }
 
-protocol CityDetailUI: AnyObject {
+protocol CityDetailViewProtocol: AnyObject {
     func show(weather: Weather)
     func showLoading(_ show: Bool)
     func showError(message: String)
@@ -22,7 +22,7 @@ protocol CityDetailUI: AnyObject {
 
 
 final class CityDetailPresenter: CityDetailPresenterProtocol {
-    weak var ui: CityDetailUI?
+    weak var ui: CityDetailViewProtocol?
     private let getWeatherUseCase: GetWeatherByLocationUseCase
 
     init(getWeatherUseCase: GetWeatherByLocationUseCase) {
